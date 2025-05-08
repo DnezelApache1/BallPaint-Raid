@@ -6,7 +6,9 @@ workflows:
     environment:
       ios_signing:
         distribution_type: app_store
-        bundle_identifier: ball.paintra.id
+        bundle_identifier:
+      - ball.paintra.id
+      - ball.paintra.id.pe
       vars:
         
         XCODE_PROJECT: "PaintRaid.xcodeproj"
