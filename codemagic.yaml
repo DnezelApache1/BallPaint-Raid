@@ -7,14 +7,13 @@ workflows:
       ios_signing:
         distribution_type: app_store
         bundle_identifier:
-      - ball.paintra.id
-      - ball.paintra.id.pe
+          - ball.paintra.id
+          - ball.paintra.id.pe
       vars:
-        
         XCODE_PROJECT: "PaintRaid.xcodeproj"
         XCODE_SCHEME: "PaintRaid"
         APP_STORE_APPLE_ID: 6745492366
-      xcode: latest  #
+      xcode: latest
     triggering:
       events:
         - push
@@ -25,9 +24,6 @@ workflows:
           include: true
           source: true
     scripts:
-      - name: Set up code signing settings on Xcode project
-        script: |
-          xcode-project use-profiles
       - name: Increment build number
         script: |
           agvtool new-version -all $(($(app-store-connect get-latest-testflight-build-number "$APP_STORE_APPLE_ID") + 1))
