@@ -6,11 +6,61 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		647781022DCD2D9000BF91A9 /* AppsFlyerLib in Frameworks */ = {isa = PBXBuildFile; productRef = 647781012DCD2D9000BF91A9 /* AppsFlyerLib */; };
+		647781052DCD525700BF91A9 /* SdkPushExpress in Frameworks */ = {isa = PBXBuildFile; productRef = 647781042DCD525700BF91A9 /* SdkPushExpress */; };
+		647781112DCD52E000BF91A9 /* pe.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 6477810A2DCD52E000BF91A9 /* pe.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		647781192DCD531E00BF91A9 /* SdkPushExpress in Frameworks */ = {isa = PBXBuildFile; productRef = 647781182DCD531E00BF91A9 /* SdkPushExpress */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6477810F2DCD52E000BF91A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64FCDDF52DC91644005F75A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 647781092DCD52E000BF91A9;
+			remoteInfo = pe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		647781162DCD52E000BF91A9 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				647781112DCD52E000BF91A9 /* pe.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		6477810A2DCD52E000BF91A9 /* pe.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = pe.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		64FCDDFD2DC91644005F75A8 /* PaintRaid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaintRaid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		647781122DCD52E000BF91A9 /* Exceptions for "pe" folder in "pe" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 647781092DCD52E000BF91A9 /* pe */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		6477810B2DCD52E000BF91A9 /* pe */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				647781122DCD52E000BF91A9 /* Exceptions for "pe" folder in "pe" target */,
+			);
+			path = pe;
+			sourceTree = "<group>";
+		};
 		64FCDDFF2DC91644005F75A8 /* PaintRaid */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = PaintRaid;
@@ -19,20 +69,39 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		647781072DCD52E000BF91A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				647781192DCD531E00BF91A9 /* SdkPushExpress in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		64FCDDFA2DC91644005F75A8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				647781052DCD525700BF91A9 /* SdkPushExpress in Frameworks */,
+				647781022DCD2D9000BF91A9 /* AppsFlyerLib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		647781172DCD531A00BF91A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		64FCDDF42DC91644005F75A8 = {
 			isa = PBXGroup;
 			children = (
 				64FCDDFF2DC91644005F75A8 /* PaintRaid */,
+				6477810B2DCD52E000BF91A9 /* pe */,
+				647781172DCD531A00BF91A9 /* Frameworks */,
 				64FCDDFE2DC91644005F75A8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				64FCDDFD2DC91644005F75A8 /* PaintRaid.app */,
+				6477810A2DCD52E000BF91A9 /* pe.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,6 +118,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		647781092DCD52E000BF91A9 /* pe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 647781132DCD52E000BF91A9 /* Build configuration list for PBXNativeTarget "pe" */;
+			buildPhases = (
+				647781062DCD52E000BF91A9 /* Sources */,
+				647781072DCD52E000BF91A9 /* Frameworks */,
+				647781082DCD52E000BF91A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				6477810B2DCD52E000BF91A9 /* pe */,
+			);
+			name = pe;
+			packageProductDependencies = (
+				647781182DCD531E00BF91A9 /* SdkPushExpress */,
+			);
+			productName = pe;
+			productReference = 6477810A2DCD52E000BF91A9 /* pe.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		64FCDDFC2DC91644005F75A8 /* PaintRaid */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 64FCDE0B2DC91646005F75A8 /* Build configuration list for PBXNativeTarget "PaintRaid" */;
@@ -56,16 +149,20 @@
 				64FCDDF92DC91644005F75A8 /* Sources */,
 				64FCDDFA2DC91644005F75A8 /* Frameworks */,
 				64FCDDFB2DC91644005F75A8 /* Resources */,
+				647781162DCD52E000BF91A9 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				647781102DCD52E000BF91A9 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				64FCDDFF2DC91644005F75A8 /* PaintRaid */,
 			);
 			name = PaintRaid;
 			packageProductDependencies = (
+				647781012DCD2D9000BF91A9 /* AppsFlyerLib */,
+				647781042DCD525700BF91A9 /* SdkPushExpress */,
 			);
 			productName = PaintRaid;
 			productReference = 64FCDDFD2DC91644005F75A8 /* PaintRaid.app */;
@@ -81,6 +178,9 @@
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
+					647781092DCD52E000BF91A9 = {
+						CreatedOnToolsVersion = 16.0;
+					};
 					64FCDDFC2DC91644005F75A8 = {
 						CreatedOnToolsVersion = 16.0;
 					};
@@ -95,17 +195,29 @@
 			);
 			mainGroup = 64FCDDF42DC91644005F75A8;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				647781002DCD2D9000BF91A9 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */,
+				647781032DCD525700BF91A9 /* XCRemoteSwiftPackageReference "pushexpress-swift-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 64FCDDFE2DC91644005F75A8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				64FCDDFC2DC91644005F75A8 /* PaintRaid */,
+				647781092DCD52E000BF91A9 /* pe */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		647781082DCD52E000BF91A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		64FCDDFB2DC91644005F75A8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -139,6 +251,13 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		647781062DCD52E000BF91A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		64FCDDF92DC91644005F75A8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -148,7 +267,73 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		647781102DCD52E000BF91A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 647781092DCD52E000BF91A9 /* pe */;
+			targetProxy = 6477810F2DCD52E000BF91A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		647781142DCD52E000BF91A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = pe/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = pe;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ball.paintra.id;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		647781152DCD52E000BF91A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = pe/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = pe;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ball.paintra.id;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		64FCDE092DC91646005F75A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -273,13 +458,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"PaintRaid/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "BallPaint Raid";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "AppsFlyer helps us track how the app is used so we can make it better for you — from smoother performance to more relevant content and ads. We collect only what's needed to improve your experience, always keep your data safe, and never share it without your clear consent.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -290,7 +477,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 5;
+				MARKETING_VERSION = 6;
 				PRODUCT_BUNDLE_IDENTIFIER = ball.paintra.id;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -307,13 +494,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"PaintRaid/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "BallPaint Raid";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "AppsFlyer helps us track how the app is used so we can make it better for you — from smoother performance to more relevant content and ads. We collect only what's needed to improve your experience, always keep your data safe, and never share it without your clear consent.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -324,7 +513,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 5;
+				MARKETING_VERSION = 6;
 				PRODUCT_BUNDLE_IDENTIFIER = ball.paintra.id;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -339,6 +528,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		647781132DCD52E000BF91A9 /* Build configuration list for PBXNativeTarget "pe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				647781142DCD52E000BF91A9 /* Debug */,
+				647781152DCD52E000BF91A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		64FCDDF82DC91644005F75A8 /* Build configuration list for PBXProject "PaintRaid" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -358,6 +556,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		647781002DCD2D9000BF91A9 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.17.0;
+			};
+		};
+		647781032DCD525700BF91A9 /* XCRemoteSwiftPackageReference "pushexpress-swift-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pushexpress/pushexpress-swift-sdk.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		647781012DCD2D9000BF91A9 /* AppsFlyerLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 647781002DCD2D9000BF91A9 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */;
+			productName = AppsFlyerLib;
+		};
+		647781042DCD525700BF91A9 /* SdkPushExpress */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 647781032DCD525700BF91A9 /* XCRemoteSwiftPackageReference "pushexpress-swift-sdk" */;
+			productName = SdkPushExpress;
+		};
+		647781182DCD531E00BF91A9 /* SdkPushExpress */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 647781032DCD525700BF91A9 /* XCRemoteSwiftPackageReference "pushexpress-swift-sdk" */;
+			productName = SdkPushExpress;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 64FCDDF52DC91644005F75A8 /* Project object */;
 }
