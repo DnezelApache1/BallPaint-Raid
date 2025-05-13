@@ -8,10 +8,11 @@ workflows:
         distribution_type: app_store
         bundle_identifier: ball.paintra.id
       vars:
+        
         XCODE_PROJECT: "PaintRaid.xcodeproj"
         XCODE_SCHEME: "PaintRaid"
         APP_STORE_APPLE_ID: 6745492366
-      xcode: latest
+      xcode: latest  #
     triggering:
       events:
         - push
@@ -22,7 +23,7 @@ workflows:
           include: true
           source: true
     scripts:
-      - name: Set up automatic code signing
+      - name: Set up code signing settings on Xcode project
         script: |
           xcode-project use-profiles
       - name: Increment build number
